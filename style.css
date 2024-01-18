@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#app {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #3498db;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #fff;
+    color: #3498db;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#currentMonth {
+    margin: 0;
+    
+}
+
+main {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.day {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.current-day {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.events-indicator {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+    color: #3498db;
+}
+
+.modal {
+    background-color: #fff;
+    border: 1px solid #3498db;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.modal-header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.modal-body {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.time-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3498db;
+    padding: 10px 0;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
+
+#calendar > div {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#currentMonth {
+    grid-column: span 7;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#prevMonthBtn,
+#nextMonthBtn,
+#toggleViewBtn {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    user-select: none;
+    border-radius: 75px;
+    font-weight: bold;
+}
+
+#prevMonthBtn:hover,
+#nextMonthBtn:hover,
+#toggleViewBtn:hover {
+    background-color: #2769a2;
+}
